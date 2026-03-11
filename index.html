@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メモアプリ</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <span style="font-size:1.4rem;">📝</span>
+  <h1>メモアプリ</h1>
+</header>
+
+<div class="main">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <button class="btn-new" id="btnNew">+ 新規メモ</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="メモを検索..." />
+    </div>
+    <div class="note-list" id="noteList"></div>
+    <div class="count" id="noteCount">0 件のメモ</div>
+  </div>
+
+  <div class="editor-area" id="editorArea">
+    <div class="empty-state">
+      <div class="icon">📄</div>
+      <p>メモを選択するか、新規作成してください</p>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
